@@ -1,0 +1,21 @@
+{
+  "title": "My Jetpack Addon",
+  "name": "delTranslater",
+  "version": "0.0.1",
+  "description": "A basic add-on",
+  "author": "Ilya Botarev",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["request.js"]
+    }
+  ]
+}
